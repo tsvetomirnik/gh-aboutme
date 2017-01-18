@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { ApiService as GitHubApi } from './shared/services/github-api/api.service';
+import { ApiService as GitHubApi } from './core/github-api/api.service';
 import { ConfigService } from './shared/services/config.service';
 import { UserConfigResolverService } from './shared/services/user-config-resolver.service';
 

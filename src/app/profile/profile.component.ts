@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
-import * as GitHub from '../shared/services/github-api';
+import * as GitHub from '../core/github-api';
 import { User } from '../shared/models/User';
 import { UserConfigResolverService } from '../shared/services/user-config-resolver.service';
 

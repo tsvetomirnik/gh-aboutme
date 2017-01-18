@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import * as GitHub from '../services/github-api';
+import * as GitHub from '../../core/github-api';
 import { IUserConfig, ISocialIconConfig } from '../interfaces';
 import { User, SocialIcon } from '../models';
 import { SocialIconTypes } from '../enums';
