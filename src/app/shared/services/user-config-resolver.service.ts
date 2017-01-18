@@ -12,7 +12,7 @@ export class UserConfigResolverService {
     let user = new User();
     user.name = config.name ? config.name : githubUser.name;
     user.avatarUrl = config.avatarUrl ? config.avatarUrl : githubUser.avatarUrl;
-    user.username = config.username === true ? githubUser.username : (config.username ? config.username : null);
+    user.nickname = config.nickname === true ? githubUser.nickname : (config.nickname ? config.nickname : null);
     user.bio = config.bio === true ? githubUser.bio : (config.bio ? config.bio : null);
     user.location = config.location === true ? githubUser.location : (config.location ? config.location : null);
     user.company = config.company === true ? githubUser.company : (config.company ? config.company : null);

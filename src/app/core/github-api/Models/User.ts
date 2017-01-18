@@ -2,7 +2,7 @@ import { UserInput } from '../Inputs';
 
 export class User {
   name: string;
-  username: string;
+  nickname: string;
   email: string;
   location: string;
   company: string;
@@ -24,7 +24,7 @@ export class User {
 
   private setInput(input: UserInput) {
     this.name = input.name;
-    this.username = input.login;
+    this.nickname = input.login;
     this.email = input.email;
     this.bio = input.bio;
     this.location = input.location;
