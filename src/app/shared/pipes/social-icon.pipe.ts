@@ -32,7 +32,7 @@ export class SocialIconPipe implements PipeTransform {
 
   transform(value: SocialIconTypes, args?: any): any {
     let icon = SocialIconPipe.prefix;
-    
+
     if (this.profileIcons[value]) {
       icon = icon + this.profileIcons[value];
     } else {
