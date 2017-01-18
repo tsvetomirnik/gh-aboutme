@@ -11,15 +11,12 @@ export class ConfigService {
 
   public static readonly configPath = 'config.json';
 
-  constructor(
-    private http: Http,
-    private userConfigResolver: UserConfigResolverService
-  ) { }
+  constructor(private http: Http) { }
 
   getConfiguration(): Observable<IUserConfig> {
     return this.http.get(ConfigService.configPath)
-    .map(result  => {
-      return JSON.parse(result.text());
-    });
+      .map(result => {
+        return result.json();
+      });
   }
 }
