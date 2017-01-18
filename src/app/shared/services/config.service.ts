@@ -16,7 +16,17 @@ export class ConfigService {
   getConfiguration(): Observable<IUserConfig> {
     return this.http.get(ConfigService.configPath)
       .map(result => {
-        return result.json();
+        return JSON.parse(this.removeComments(result.text()));
       });
+  }
+
+  private removeComments(source: string) {
+    const newLine = '\n';
+    const commentChars = ['//', '/*', '*'];
+    return source.split(newLine)
+      .filter(line => {
+        let hasComment = commentChars.some(c => line.trim().startsWith(c));
+        return !hasComment;
+      }).join(newLine);
   }
 }
