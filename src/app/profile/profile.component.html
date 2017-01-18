@@ -27,7 +27,7 @@
         </ul>
       </section>
 
-      <section *ngIf="user?.socialIcons.length > 0">
+      <section *ngIf="user?.socialIcons?.length > 0">
         <ul class="unstyled-list icons">
           <li class="icon tooltip" *ngFor="let icon of user.socialIcons">
             <a href="{{ icon.link || 'javascript:void(0);' }}">

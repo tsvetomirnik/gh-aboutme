@@ -16,7 +16,19 @@ export class UserConfigResolverService {
     user.bio = config.bio === true ? githubUser.bio : (config.bio ? config.bio : null);
     user.location = config.location === true ? githubUser.location : (config.location ? config.location : null);
     user.company = config.company === true ? githubUser.company : (config.company ? config.company : null);
-    user.socialIcons = config.socialIcons.map(p => this.resolveSocialIcons(p));
+
+    if (config.socialIcons) {
+      if (config.socialIcons.length) {
+        user.socialIcons = config.socialIcons.map(p => this.resolveSocialIcons(p));
+      } else {
+        let defaultIcons: SocialIcon[] = [{
+          type: SocialIconTypes.GITHUB,
+          link: `https://github.com/${config.githubUsername}`,
+        }];
+        user.socialIcons = defaultIcons;
+      }
+    }
+
     return user;
   }
 

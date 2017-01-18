@@ -55,20 +55,18 @@
     * Set of social profiles
     * NOTE: Order can be changed;
     * NOTE: Each icon can have text and link (not required);
+    * Values:
+    *   NULL to skip that section
+    *   Collection of icons
     * Allowed Icon Types:
     *   ANGELLIST | EMAIL | BEHANCE | CODEPEN | DRIBBBLE | FACEBOOK | GITHUB | GOOGLE_PLUS | INSTAGRAM |
     *   LINKEDIN | PINTEREST | STACK_OVERFLOW | SKYPE | TWITTER | YOUTUBE | WEBSITE
     */
     "socialIcons": [
-        {
-            "type": "GITHUB",
-            "link": "https: //github.com/github",
-            "text": "GitHub"
-        },
-        {
-            "type": "TWITTER",
-            "link": "https: //twitter.com/github",
-            "text": "Twitter"
-        }
+        // {
+        //     "type": "GITHUB",
+        //     "link": "https://github.com/github",
+        //     "text": "My GitHub Profile"
+        // }
     ]
 }
