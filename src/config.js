@@ -5,6 +5,7 @@
     * IMPORTANT: Don't forget to set your username here.'
     */
     "githubUsername": "github",
+    
     /**
     * Full name
     * Value:
@@ -12,6 +13,7 @@
     *   STRING VALUE to override the one from GitHub
     */
     "name": null,
+
     /**
     * Nickname
     * Values:
@@ -20,6 +22,7 @@
     *   STRING VALUE to override the one from GitHub
     */
     "nickname": true,
+
     /**
     * Short description
     * Values:
@@ -28,6 +31,7 @@
     *   STRING VALUE to override the one from GitHub
     */
     "bio": true,
+
     /**
     * Profile image
     * Values:
@@ -35,6 +39,7 @@
     *   STRING VALUE to override the one from GitHub
     */
     "avatarUrl": null,
+
     /**
     * Current address
     * Values:
@@ -43,6 +48,7 @@
     *   STRING VALUE to override the one from GitHub
     */
     "location": true,
+
     /**
     * Company
     * Values:
@@ -51,6 +57,7 @@
     *   STRING VALUE to override the one from GitHub
     */
     "company": true,
+    
     /**
     * Set of social profiles
     * NOTE: Order can be changed;

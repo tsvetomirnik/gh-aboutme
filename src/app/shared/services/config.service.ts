@@ -9,7 +9,7 @@ import { IUserConfig } from '../interfaces';
 @Injectable()
 export class ConfigService {
 
-  public static readonly configPath = 'config.json';
+  public static readonly configPath = 'config.js';
 
   constructor(private http: Http) { }
 

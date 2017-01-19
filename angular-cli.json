@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "config.json",
+        "config.js",
         "favicon.ico"
       ],
       "index": "index.html",
