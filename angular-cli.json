@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "config.js",
-        "favicon.ico"
+        "favicon.ico",
+        "README.md"
       ],
       "index": "index.html",
       "main": "main.ts",
