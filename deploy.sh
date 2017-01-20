@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo $TRAVIS_BRANCH;
-if [[ $TRAVIS_BRANCH == $SOURCE_BRANCH ]]
+if [ $TRAVIS_BRANCH == $SOURCE_BRANCH ]
+then
   git checkout develop
   rm -rf dist || exit 0
   mkdir dist
@@ -17,4 +18,3 @@ if [[ $TRAVIS_BRANCH == $SOURCE_BRANCH ]]
   git commit -m "Deployed"
   git push --force --quiet "https://${GITHUB_API_KEY}@${REPO_REF}" master > /dev/null 2>&1
 fi
-
