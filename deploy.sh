@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo $TRAVIS_BRANCH;
-if [ $TRAVIS_BRANCH == $SOURCE_BRANCH ]
-then
+if [ $TRAVIS_PULL_REQUEST == true -o $TRAVIS_BRANCH == $SOURCE_BRANCH ]; then
   git checkout develop
   rm -rf dist || exit 0
   mkdir dist
