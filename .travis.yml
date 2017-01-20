@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "6.1"
+before_install:
+- chmod +x deploy.sh
 after_success:
-  - chmod +x /deploy/deploy-master.sh
-  - npm run-script deploy
+- ./deploy.sh
