@@ -10,7 +10,7 @@ describe('ConfigService', () => {
     });
   });
 
-  it('should ...', inject([ConfigService], (service: ConfigService) => {
+  xit('should ...', inject([ConfigService], (service: ConfigService) => {
     expect(service).toBeTruthy();
   }));
 });
