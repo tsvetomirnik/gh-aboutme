@@ -16,4 +16,5 @@ if [ $TRAVIS_PULL_REQUEST == true -o $TRAVIS_BRANCH == $SOURCE_BRANCH ]; then
   git add .
   git commit -m "Deployed"
   git push --force --quiet "https://${GITHUB_API_KEY}@${REPO_REF}" master > /dev/null 2>&1
+  git push --force --quiet "https://${GITHUB_API_KEY}@${REPO_REF}" "gh-pages" > /dev/null 2>&1
 fi
