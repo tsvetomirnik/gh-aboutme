@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { ApiService as GitHubApi } from './core/github-api/api.service';
+import { AboutmeApiService } from './core/gh-aboutme/gh-aboutme-api';
 import { ConfigService } from './shared/services/config.service';
 import { UserConfigResolverService } from './shared/services/user-config-resolver.service';
 
@@ -24,6 +25,7 @@ import { SocialIconPipe } from './shared/pipes/social-icon.pipe';
   ],
   providers: [
     GitHubApi,
+    AboutmeApiService,
     ConfigService,
     UserConfigResolverService
   ],
