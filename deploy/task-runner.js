@@ -18,11 +18,6 @@ function runTasks(tasks) {
     });
   });
 
-  sequence.then(function () {
-    // Success
-    process.exit(0);
-  });
-
   return sequence;
 }
 

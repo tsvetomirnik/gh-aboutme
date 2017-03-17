@@ -97,4 +97,7 @@ var tasks = [
   }),
 ];
 
-runner.runTasks(tasks);
+runner.runTasks(tasks).then(function () {
+  // Success
+  process.exit(0);
+});
