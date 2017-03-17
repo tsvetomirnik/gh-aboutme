@@ -10,12 +10,14 @@ import { UserConfigResolverService } from './shared/services/user-config-resolve
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PageLoaderComponent } from './shared/components/page-loader/page-loader.component';
 import { SocialIconPipe } from './shared/pipes/social-icon.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
+    PageLoaderComponent,
     SocialIconPipe
   ],
   imports: [

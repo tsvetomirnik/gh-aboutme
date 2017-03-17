@@ -1,4 +1,6 @@
-<div class="profile">
+<app-page-loader *ngIf="!user"></app-page-loader>
+
+<div *ngIf="user" class="profile">
   <div class="profile__header">
     <div class="image-container circle" [style.background-image]="'url(' + user?.avatarUrl + ')'"></div>
   </div>
