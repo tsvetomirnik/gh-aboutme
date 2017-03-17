@@ -52,9 +52,6 @@ var tasks = [
       resolve();
     });
   }),
-  new runner.Task('Open App Root folder', function () {
-    return runner.runCommand('cd ..');
-  }),
   new runner.Task(`Checkout ${SOURCE_BRANCH} branch`, function () {
     return runner.runCommand(`git checkout ${SOURCE_BRANCH}`);
   }),
