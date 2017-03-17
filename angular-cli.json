@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.24",
+    "version": "1.0.0",
     "name": "gh-aboutme"
   },
   "apps": [
@@ -24,8 +24,8 @@
       ],
       "scripts": [
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
